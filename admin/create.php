@@ -2,9 +2,10 @@
 include('../components/header.php');
 ?>
     <div class="dashboard">
-        <div class="sidebar">
-<h3 class="admin-title">Aurablog</h3>
-        </div>
+
+<?php 
+include('../components/sidebar.php');
+?>
         <div class="create-form">
             <form action="process.php" method="post">
                 <div class="form-field">
