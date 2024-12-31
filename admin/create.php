@@ -6,7 +6,7 @@ include('../components/header.php');
 <h3 class="admin-title">Aurablog</h3>
         </div>
         <div class="create-form">
-            <form action="" method="post">
+            <form action="process.php" method="post">
                 <div class="form-field">
                     <input type="text" name="title" id="" placeholder="Title">
                 </div>
