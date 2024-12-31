@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/globals.css">
     <title>Dashboard</title>
 </head>
 <body>
@@ -17,11 +18,11 @@
                 </div>
 
                 <div class="form-field">
-                    <textarea name="summary" rows="10" cols="30" id="" placeholder="Enter Summary">
+                    <textarea name="summary" rows="10" cols="30" id="" placeholder="Enter Summary"></textarea>
                 </div>
 
                 <div class="form-field">
-                    <textarea name="content" rows="10" cols="30" id="" placeholder="What do want to talk about">
+                    <textarea name="content" rows="10" cols="30" id="" placeholder="What do want to talk about"></textarea>
                 </div>
                 <input type="hidden" name="date" value="<?php echo date("y/m/d"); ?>">
 
