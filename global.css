@@ -318,3 +318,15 @@ footer {
         font-size: 0.8rem;
     }
 }
+
+/* Styling the post links */
+.post-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from the parent element (in this case, the .blog-post) */
+}
+
+/* Optional: Add hover effect to posts */
+.post-link:hover .blog-post {
+    transform: translateY(-5px); /* Adds a subtle hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: adds shadow on hover */
+}
