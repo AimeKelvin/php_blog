@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Admin</h2>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Manage Posts</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h2>Manage Posts</h2>
+
+      <!-- Create Post Form -->
+      <div class="post-form">
+        <input type="text" id="title" placeholder="Post Title" />
+        <textarea id="content" placeholder="Post Content"></textarea>
+        <input type="text" id="imageUrl" placeholder="Post Image URL" />
+        <button id="createPost">Create Post</button>
+      </div>
+
+      <!-- Posts List -->
+      <div class="post-list">
+        <div class="post-item">
+          <h3>Sample Post Title</h3>
+          <img src="sample-image.jpg" alt="Post Image" />
+          <p>Sample content of the blog post.</p>
+          <button>Edit</button>
+          <button>Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
