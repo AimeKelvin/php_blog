@@ -30,6 +30,7 @@ header {
     opacity: 0.9;
 }
 
+/* Blog container to be scrollable */
 .blog-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -38,8 +39,11 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     flex: 1;
+    max-height: 80vh;  /* Limit the height so content can scroll */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
+/* Blog Post Styles */
 .blog-post {
     background: white;
     border-radius: 10px;
@@ -81,4 +85,59 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container h1 {
+        font-size: 2rem;
+    }
+
+    .header-container p {
+        font-size: 1rem;
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 10px;
+    }
+
+    .blog-title {
+        font-size: 1.2rem;
+    }
+
+    .blog-article {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-container p {
+        font-size: 0.9rem;
+    }
+
+    .blog-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .blog-title {
+        font-size: 1rem;
+    }
+
+    .blog-article {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }
