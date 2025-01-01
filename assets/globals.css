@@ -161,3 +161,105 @@ input[type="submit"]:hover {
         padding: 10px;
     }
 }
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #0077b6;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Blog Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Blog Post Card */
+.post {
+    background: white;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.post h3 {
+    font-size: 1.8rem;
+    color: #0077b6;
+    margin: 15px 20px 10px;
+}
+
+.post .date {
+    font-size: 0.9rem;
+    color: #999;
+    margin: 0 20px 15px;
+}
+
+.post p {
+    font-size: 1.1rem;
+    margin: 0 20px 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .post h3 {
+        font-size: 1.5rem;
+    }
+
+    .post p {
+        font-size: 1rem;
+    }
+}
+
+/* Blog Post Image */
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+    display: block;
+    object-fit: cover;
+}

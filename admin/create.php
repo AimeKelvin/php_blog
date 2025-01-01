@@ -17,6 +17,10 @@ include('../components/sidebar.php');
                 </div>
 
                 <div class="form-field">
+                <input type="text" name="postImage" id="" placeholder="Image">
+                </div>
+
+                <div class="form-field">
                     <textarea name="content" rows="10" cols="30" id="" placeholder="The full cup of tea"></textarea>
                 </div>
                 <input type="hidden" name="date" value="<?php echo date("y/m/d"); ?>">
@@ -24,6 +28,8 @@ include('../components/sidebar.php');
                 <div class="form-field">
                     <input type="submit" value="Post" name="create">
                 </div>
+
+                
             </form>
         </div>
     </div>
